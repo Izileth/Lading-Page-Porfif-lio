@@ -125,8 +125,9 @@
 
 @media only screen and (max-width: 768px){
    .hero{
-    flex-direction: column;
+    flex-direction: column-reverse;
        .hero-content{
+        flex-direction: column-reverse;
             div{
                 margin: 2.4rem;
                 h1{
@@ -147,6 +148,8 @@
             div{
                 width: max-content;
                 img{
+                    filter: blur(0px);
+                    border: none;
                     height: 450px;
                 }
             }
@@ -267,11 +270,12 @@
             }
         }
         .about-content{
-            flex-direction: column;
+            flex-direction: column-reverse;
             gap: 0;
             .about-info{
                 width: 100%;
                 margin-top: 2.4rem;
+                margin-inline: 0;
                 h3{
                     font-size: 2.8rem;
                     margin-block: 1.6rem;
@@ -592,13 +596,16 @@
 @media only screen and (max-width: 768px){
     .skills{
         .skills-content{
-            flex-direction: column;
+            flex-direction: column-reverse;
             gap: 0;
             .skills-grid{
                 gap: 1.2rem;
                 .skill-card{
                     ul{
                         flex-direction: column;
+                    }
+                    h3{
+                        font-size: 1.7rem;
                     }
                     padding: 1.2rem;
                 }
