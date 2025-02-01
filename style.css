@@ -193,7 +193,7 @@ header {
 }
 .hero .hero-midia div img {
   border: 1px solid #121212;
-  width: 100%;
+  width: 90%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -205,6 +205,15 @@ header {
   box-shadow: 0 0 30px #ff0000;
 }
 
+@media only screen and (max-width: 1668px) {
+  .hero .hero-midia div {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .hero .hero-midia div img {
+    height: 800px;
+  }
+}
 @media only screen and (max-width: 1468px) {
   .hero .hero-content div {
     margin: 2.4rem;
@@ -234,7 +243,8 @@ header {
     margin: 2.4rem;
   }
   .hero .hero-content div h1 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
+    width: 60%;
     margin-block: 1.2rem;
   }
   .hero .hero-content div p {
@@ -249,7 +259,7 @@ header {
     width: max-content;
   }
   .hero .hero-midia div img {
-    height: 400px;
+    height: 450px;
   }
 }
 @media only screen and (max-width: 568px) {
@@ -315,6 +325,15 @@ header {
   filter: grayscale(100%) blur(4px);
 }
 
+@media only screen and (max-width: 1668px) {
+  .about .about-content .about-info {
+    align-items: start;
+    margin-inline-start: 2rem;
+  }
+  .about .about-content .about-info h3 {
+    text-align: left;
+  }
+}
 @media only screen and (max-width: 1468px) {
   .about img {
     height: -moz-min-content;
@@ -503,7 +522,7 @@ header {
     display: none;
   }
 }
-@media only screen and (max-width: 468px) {
+@media only screen and (max-width: 498px) {
   .projects {
     height: -moz-max-content;
     height: max-content;
@@ -517,6 +536,9 @@ header {
   .projects .project-grid .project-card {
     height: -moz-max-content;
     height: max-content;
+  }
+  .projects .project-grid .project-card .project-info {
+    height: 550px;
   }
   .projects .project-grid .project-card .project-info h3 {
     font-size: 1.8rem;
@@ -677,6 +699,24 @@ header {
   }
   .skills .skills-content .skill-midia img {
     width: 400px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 478px) {
+  .skills .skills-content {
+    flex-direction: column;
+    gap: 0;
+  }
+  .skills .skills-content .skills-grid .skill-card ul {
+    flex-direction: column;
+  }
+  .skills .skills-content .skill-midia {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .skills .skills-content .skill-midia img {
+    width: 300px;
     height: auto;
   }
 }
